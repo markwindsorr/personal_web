@@ -1,5 +1,5 @@
 .blogIndex {
-  padding: 0 5%;
+  padding: 0 3%;
 }
 
 .blogIndex h1 {
@@ -16,8 +16,8 @@
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  border: 1px solid #eaeaea;
-  width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 800px;
   padding: 16px;
   border-radius: 5px;
 }
@@ -201,7 +201,7 @@
 
 .bookmarkLinkWrapper {
   display: flex;
-  margin-top: 6px;
+  margin-top: 3px;
 }
 
 .bookmarkLinkIcon {

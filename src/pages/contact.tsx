@@ -38,21 +38,28 @@ export default function Contact() {
       <Header titlePre="Contact" />
       <div className={sharedStyles.layout}>
         <div className={contactStyles.avatar}>
-          <img src="/avatar.png" alt="avatar with letters JJ" height={60} />
+          <img src="/fed.png" alt="logo" height={60} />
         </div>
 
         <h1 style={{ marginTop: 0 }}>Contact</h1>
 
         <div className={contactStyles.name}>
           Mark Windsor - Software Engineer @{' '}
-          <ExtLink href="https://atlas-finance.io">Atlas Finance</ExtLink>
+          <ExtLink style={{ color: 'blue' }} href="https://atlas-finance.io">
+            Atlas Finance
+          </ExtLink>
         </div>
 
         <div className={contactStyles.links}>
           {contacts.map(({ Comp, link, alt }) => {
             return (
-              <ExtLink key={link} href={link} aria-label={alt}>
-                <Comp height={32} />
+              <ExtLink
+                style={{ color: 'white' }}
+                key={link}
+                href={link}
+                aria-label={alt}
+              >
+                <Comp height={32} style={{ color: 'white' }} />
               </ExtLink>
             )
           })}

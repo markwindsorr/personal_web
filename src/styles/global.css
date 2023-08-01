@@ -4,18 +4,12 @@
   --gap: 1rem;
   --gap-double: 2rem;
 
-  --bg: #fff;
-  --fg: #000;
-  --accents-1: #111;
-  --accents-2: #333;
-  --accents-3: #888;
+  --bg: #0f151f;
+
   --geist-foreground: #000;
 
-  --radius: 8px;
-
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  --font-sans: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   --font-mono: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -35,11 +29,9 @@ body {
   min-height: 100vh;
   background: var(--bg);
   color: var(--fg);
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
 
-  background-image: radial-gradient(#ddd 1px, transparent 1px),
-    radial-gradient(#ddd 1px, transparent 1px);
   background-position: 0 0, 25px 25px;
   background-attachment: fixed;
   background-size: 50px 50px;
@@ -50,7 +42,7 @@ body {
 
 code[class*='language-'],
 pre[class*='language-'] {
-  color: #000;
+  color: white;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -282,13 +274,14 @@ h1 {
   font-size: 2.25rem;
   font-weight: 800;
   letter-spacing: -0.05rem;
+  color: white;
 }
 
 h2 {
   font-weight: 300;
   font-size: 1.25rem;
   letter-spacing: -0.02rem;
-  color: var(--accents-3);
+  color: white;
 }
 
 .video {
