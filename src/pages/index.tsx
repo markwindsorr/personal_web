@@ -9,12 +9,12 @@ export default function Index() {
       <Header titlePre="Home" />
       <div className={sharedStyles.layout}>
         <img
-          src="/vercel-and-notion.png"
-          height="85"
-          width="250"
+          src="/whiteBuildingsVisual.png"
+          height="30%"
+          width="50%"
           alt="Vercel + Notion"
         />
-        <h1>My Notion Blog</h1>
+        <h1>Mark Windsor</h1>
         <h2>
           Blazing Fast Notion Blog with Next.js'{' '}
           <ExtLink
@@ -26,7 +26,7 @@ export default function Index() {
           </ExtLink>
         </h2>
 
-        <Features />
+        {/* <Features />
 
         <div className="explanation">
           <p>
@@ -60,7 +60,7 @@ export default function Index() {
             After finding your token and your blog's page id you should be good
             to go!
           </p>
-        </div>
+        </div> */}
       </div>
     </>
   )

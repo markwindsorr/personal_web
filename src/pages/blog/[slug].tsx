@@ -24,11 +24,11 @@ export async function getStaticProps({ params: { slug }, preview }) {
   if (!post || (post.Published !== 'Yes' && !preview)) {
     console.log(`Failed to find post for slug: ${slug}`)
     return {
-      props: {
-        redirect: '/blog',
-        preview: false,
+      redirect: {
+        destination: '/blog', // Redirect to the blog index page
+        permanent: false, // Set to true if the redirect is permanent
       },
-      unstable_revalidate: 5,
+      revalidate: 10, // You can set a revalidation time if needed
     }
   }
   const postData = await getPageData(post.id)
@@ -64,20 +64,19 @@ export async function getStaticProps({ params: { slug }, preview }) {
       post,
       preview: preview || false,
     },
-    revalidate: 10,
+    revalidate: 10, // You can set a revalidation time if needed
   }
 }
 
 // Return our list of blog posts to prerender
 export async function getStaticPaths() {
   const postsTable = await getBlogIndex()
-  // we fallback for any unpublished posts to save build time
-  // for actually published ones
+  // We use fallback: true to enable fallback behavior for dynamic routes
   return {
     paths: Object.keys(postsTable)
       .filter((post) => postsTable[post].Published === 'Yes')
       .map((slug) => getBlogLink(slug)),
-    fallback: true,
+    fallback: false,
   }
 }
 
