@@ -9,6 +9,8 @@ import Twitter from '../components/svgs/twitter'
 import Envelope from '../components/svgs/envelope'
 import LinkedIn from '../components/svgs/linkedin'
 
+const img = require('../../assets/fed.png')
+
 const contacts = [
   {
     Comp: Twitter,
@@ -38,15 +40,15 @@ export default function Contact() {
       <Header titlePre="Contact" />
       <div className={sharedStyles.layout}>
         <div className={contactStyles.avatar}>
-          <img src="/fed.png" alt="logo" height={60} />
+          <img src="/fed.png" alt="logo" />
         </div>
 
         <h1 style={{ marginTop: 0 }}>Contact</h1>
 
         <div className={contactStyles.name}>
-          Mark Windsor - Software Engineer @{' '}
-          <ExtLink style={{ color: 'blue' }} href="https://atlas-finance.io">
-            Atlas Finance
+          Mark Windsor - Software Engineer{' '}
+          <ExtLink style={{ color: '#038CF3' }} href="https://atlas-finance.io">
+            @ Atlas Finance
           </ExtLink>
         </div>
 

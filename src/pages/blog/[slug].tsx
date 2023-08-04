@@ -151,9 +151,9 @@ const RenderPost = ({ post, redirect, preview }) => {
       )}
       <div className={blogStyles.post}>
         <h1>{post.Page || ''}</h1>
-        {post.Authors.length > 0 && (
+        {/* {post.Authors.length > 0 && (
           <div className="authors">By: {post.Authors.join(' ')}</div>
-        )}
+        )} */}
         {post.Date && (
           <div className="posted">Posted: {getDateStr(post.Date)}</div>
         )}
@@ -288,6 +288,7 @@ const RenderPost = ({ post, redirect, preview }) => {
               }
               break
             case 'image':
+
             case 'video':
             case 'embed': {
               const { format = {} } = value
@@ -318,6 +319,7 @@ const RenderPost = ({ post, redirect, preview }) => {
                     border: 'none',
                     position: 'absolute',
                     top: 0,
+                    color: 'white',
                   }
                 : {
                     width,
