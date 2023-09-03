@@ -1,11 +1,11 @@
 {
-  "name": "notion-blog",
+  "name": "personal-web",
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
     "start": "next start",
     "export": "next export",
-    "build": "next build",
+    "build": "next build && node .next/server/build-rss.js",
     "deploy:prod": "yarn run build && yarn run export && firebase use personal-web-f09c9 && firebase deploy",
     "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
     "lint-staged": "lint-staged"
