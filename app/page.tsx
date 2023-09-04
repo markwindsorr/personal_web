@@ -40,7 +40,7 @@ export default async function Page() {
                 style={{
                     display: "flex",
                     flexDirection: "row",
-                    marginBottom: 12,
+                    marginBottom: 26,
                 }}
             >
                 {contacts.map(({ Comp, link, alt }) => {
