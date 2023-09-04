@@ -1,0 +1,4 @@
+User-Agent: *
+
+Host: https://markwindsor.ca
+Sitemap: https://markwindsor.ca/sitemap.xml

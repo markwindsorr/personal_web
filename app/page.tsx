@@ -27,37 +27,20 @@ export default async function Page() {
             <img src="/rough.png" />
 
             <div className="prose prose-neutral dark:prose-invert">
+                <p>I love to design and build 🔨.</p>
+            </div>
+            <div className="prose prose-neutral dark:prose-invert">
                 <p>
-                    I love to design, build and understand systems. Most
-                    specifically how humans organize.{" "}
+                    Here we'll maintain a collection of writings on history,
+                    economics, business, politics & technology.
                 </p>
             </div>
 
             <div className="prose prose-neutral dark:prose-invert">
-                <p>
-                    Over the past decade, I've written content on my blog and
-                    newsletter. I try to keep things simple. You'll find writing
-                    about technologies I'm interested in at the time, or how I'm
-                    learning and growing in my career, sharing knowledge along
-                    the way.
-                </p>
+                <p>Interested in what's to come.</p>
             </div>
 
-            <div className="prose prose-neutral dark:prose-invert">
-                <p>
-                    I invest small angel checks into early stage startups
-                    building tools for developers.
-                </p>
-            </div>
-
-            <div className="prose prose-neutral dark:prose-invert">
-                <p>
-                    I've also worked with or advised companies like Convex,
-                    Fauna, Plasmic, and more about developer marketing, DevRel,
-                    and building open-source communities.
-                </p>
-            </div>
-            <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
+            {/* <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
                 <li>
                     <a
                         className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
@@ -69,7 +52,7 @@ export default async function Page() {
                         <p className="h-7 ml-2">follow me</p>
                     </a>
                 </li>
-            </ul>
+            </ul> */}
         </section>
     );
 }

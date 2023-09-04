@@ -2,10 +2,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run setup && next build",
+    "build": "next build",
     "build-only": "next build",
-    "start": "next start",
-    "setup": "node ./lib/setup.mjs"
+    "export": "next export",
+    "deploy:prod": "pnpm run build && pnpm run export && firebase use personal-web-f09c9 && firebase deploy",
+    "start": "next start"
   },
   "dependencies": {
     "@planetscale/database": "^1.11.0",

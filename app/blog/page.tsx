@@ -1,14 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import ViewCounter from "./view-counter";
-import { getViewsCount } from "lib/metrics";
-
-export const metadata: Metadata = {
-    title: "Blog",
-    description: "Read my thoughts on software development, design, and more.",
-};
-
 const allBlogs = [
     {
         slug: "system",
@@ -22,7 +14,7 @@ export default async function BlogPage() {
     return (
         <section>
             <h1 className="font-bold text-2xl mb-8 tracking-tighter">
-                read my blog
+                writings.
             </h1>
             {allBlogs
                 .sort((a, b) => {
