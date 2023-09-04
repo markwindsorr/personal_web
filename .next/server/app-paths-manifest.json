@@ -1,11 +1,11 @@
 {
   "/og/route": "app/og/route.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/opengraph-image.jpg/route": "app/opengraph-image.jpg/route.js",
   "/robots.txt/route": "app/robots.txt/route.js",
-  "/page": "app/page.js",
-  "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/blog/page": "app/blog/page.js",
   "/uses/page": "app/uses/page.js"
 }

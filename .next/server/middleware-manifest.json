@@ -21,12 +21,12 @@
       ],
       "wasm": [
         {
-          "name": "wasm_a7e702bc5ba9227243abda7977c8096f59478d3f",
-          "filePath": "server/edge-chunks/wasm_a7e702bc5ba9227243abda7977c8096f59478d3f.wasm"
-        },
-        {
           "name": "wasm_ef4866ecae192fd87727067cf2c0c0cf9fb8b020",
           "filePath": "server/edge-chunks/wasm_ef4866ecae192fd87727067cf2c0c0cf9fb8b020.wasm"
+        },
+        {
+          "name": "wasm_a7e702bc5ba9227243abda7977c8096f59478d3f",
+          "filePath": "server/edge-chunks/wasm_a7e702bc5ba9227243abda7977c8096f59478d3f.wasm"
         }
       ],
       "assets": [
