@@ -1,65 +1,6 @@
 {
   "sortedMiddleware": [],
   "middleware": {},
-  "functions": {
-    "/og/route": {
-      "files": [
-        "server/middleware-build-manifest.js",
-        "server/middleware-react-loadable-manifest.js",
-        "server/next-font-manifest.js",
-        "prerender-manifest.js",
-        "server/edge-runtime-webpack.js",
-        "server/app/og/route.js"
-      ],
-      "name": "app/og/route",
-      "page": "/og/route",
-      "matchers": [
-        {
-          "regexp": "^/og$",
-          "originalSource": "/og"
-        }
-      ],
-      "wasm": [
-        {
-          "name": "wasm_ef4866ecae192fd87727067cf2c0c0cf9fb8b020",
-          "filePath": "server/edge-chunks/wasm_ef4866ecae192fd87727067cf2c0c0cf9fb8b020.wasm"
-        },
-        {
-          "name": "wasm_a7e702bc5ba9227243abda7977c8096f59478d3f",
-          "filePath": "server/edge-chunks/wasm_a7e702bc5ba9227243abda7977c8096f59478d3f.wasm"
-        }
-      ],
-      "assets": [
-        {
-          "name": "kaisei-tokumin-bold.07dd0f60efb05425.ttf",
-          "filePath": "server/edge-chunks/asset_kaisei-tokumin-bold.07dd0f60efb05425.ttf"
-        },
-        {
-          "name": "noto-sans-v27-latin-regular.5dda3fca77107598.ttf",
-          "filePath": "server/edge-chunks/asset_noto-sans-v27-latin-regular.5dda3fca77107598.ttf"
-        }
-      ]
-    },
-    "/api/auth/[...nextauth]/route": {
-      "files": [
-        "server/middleware-build-manifest.js",
-        "server/middleware-react-loadable-manifest.js",
-        "server/next-font-manifest.js",
-        "prerender-manifest.js",
-        "server/edge-runtime-webpack.js",
-        "server/app/api/auth/[...nextauth]/route.js"
-      ],
-      "name": "app/api/auth/[...nextauth]/route",
-      "page": "/api/auth/[...nextauth]/route",
-      "matchers": [
-        {
-          "regexp": "^/api/auth/(?<nextauth>.+?)$",
-          "originalSource": "/api/auth/[...nextauth]"
-        }
-      ],
-      "wasm": [],
-      "assets": []
-    }
-  },
+  "functions": {},
   "version": 2
 }

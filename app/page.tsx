@@ -1,19 +1,31 @@
-function ArrowIcon() {
-    return (
-        <svg
-            width="12"
-            height="12"
-            viewBox="0 0 12 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-        >
-            <path
-                d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
-                fill="currentColor"
-            />
-        </svg>
-    );
-}
+import ExtLink from "./components/ext-link";
+import GitHub from "./svgs/github";
+import Twitter from "./svgs/twitter";
+import Envelope from "./svgs/envelope";
+import LinkedIn from "./svgs/linkedin";
+
+const contacts = [
+    {
+        Comp: Twitter,
+        alt: "twitter icon",
+        link: "https://twitter.com/atlas_assistant",
+    },
+    {
+        Comp: GitHub,
+        alt: "github icon",
+        link: "https://github.com/markwindsorr",
+    },
+    {
+        Comp: LinkedIn,
+        alt: "linkedin icon",
+        link: "https://www.linkedin.com/in/markwindsorr/",
+    },
+    {
+        Comp: Envelope,
+        alt: "envelope icon",
+        link: "mailto:markwindsorr@atlas-finance.io",
+    },
+];
 
 export default async function Page() {
     return (
@@ -24,6 +36,29 @@ export default async function Page() {
             <h3 className="font-bold text-1xl mb-8 tracking-tighter">
                 Software Engineer | Design | Quant Finance
             </h3>
+            <div
+                style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    marginBottom: 12,
+                }}
+            >
+                {contacts.map(({ Comp, link, alt }) => {
+                    return (
+                        <ExtLink
+                            style={{
+                                color: "white",
+                                marginInline: 14,
+                            }}
+                            key={link}
+                            href={link}
+                            aria-label={alt}
+                        >
+                            <Comp height={32} style={{ color: "white" }} />
+                        </ExtLink>
+                    );
+                })}
+            </div>
             <img src="/rough.png" />
 
             <div className="prose prose-neutral dark:prose-invert">
