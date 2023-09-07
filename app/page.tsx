@@ -34,7 +34,7 @@ export default async function Page() {
                 hey, I'm Mark👋
             </h1>
             <h3 className="font-bold text-1xl mb-8 tracking-tighter">
-                Software Engineer | Design | Quant Finance
+                Software Engineer | Amateur Designer | Quant Finance
             </h3>
             <div
                 style={{
