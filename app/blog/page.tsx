@@ -16,6 +16,14 @@ export default async function BlogPage() {
             <h1 className="font-bold text-2xl mb-8 tracking-tighter">
                 writings.
             </h1>
+
+            <div className="prose prose-neutral dark:prose-invert">
+                <p>
+                    Here we'll maintain a collection of knowledge bases on
+                    history, economics, business, politics & technology.
+                </p>
+            </div>
+
             {allBlogs
                 .sort((a, b) => {
                     if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
