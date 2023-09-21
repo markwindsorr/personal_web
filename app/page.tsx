@@ -107,14 +107,10 @@ export default async function Page() {
                             />
                         </Badge>
                     </span>
-                    {`, where we provide quantitative research tools for non-technical equity & crypto analysts using language models & vast amounts of data.`}
+                    {`, where we provide quantitative research tools for non-technical traders using language models & vast amounts of data.`}
                 </p>
             </div>
-            <div className="prose prose-neutral dark:prose-invert">
-                <p className="prose prose-neutral dark:prose-invert">
-                    {`Looking to collaborate with others at the links below, where people can share knowledge on quantitative trading strategies, get boilerplate code & datasets `}
-                </p>
-            </div>
+
             <div className="my-8 flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 w-full">
                 <ChannelLink
                     img="atlasTrade.png"
@@ -135,7 +131,7 @@ export default async function Page() {
                     <a href="https://atlas-finance.notion.site/Knowledge-Base-59230eb51f5c4847b9b66d35725c16b1?pvs=4">
                         Here
                     </a>{" "}
-                    we'll maintain a collection of writings on history,
+                    is a knowledge base and collection of writings on history,
                     economics, business, politics & technology.
                 </p>
             </div>
