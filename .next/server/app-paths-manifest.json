@@ -1,8 +1,8 @@
 {
   "/og/route": "app/og/route.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/page": "app/page.js",
   "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/blog/page": "app/blog/page.js"
 }

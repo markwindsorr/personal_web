@@ -444,15 +444,8 @@ async function Page() {
                                 })
                             })
                         }),
-                        `, where we provide quantitative research tools for non-technical equity & crypto analysts using language models & vast amounts of data.`
+                        `, where we provide quantitative research tools for non-technical traders using language models & vast amounts of data.`
                     ]
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: "prose prose-neutral dark:prose-invert",
-                children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                    className: "prose prose-neutral dark:prose-invert",
-                    children: `Looking to collaborate with others at the links below, where people can share knowledge on quantitative trading strategies, get boilerplate code & datasets `
                 })
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -481,7 +474,7 @@ async function Page() {
                             children: "Here"
                         }),
                         " ",
-                        "we'll maintain a collection of writings on history, economics, business, politics & technology."
+                        "is a knowledge base and collection of writings on history, economics, business, politics & technology."
                     ]
                 })
             }),
