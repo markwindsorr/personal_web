@@ -107,7 +107,7 @@ export default async function Page() {
                             />
                         </Badge>
                     </span>
-                    {`, where we provide quantitative research tools for non-technical traders using language models & vast amounts of data.`}
+                    {`, where we provide LLM powered quantitative research workflows`}
                 </p>
             </div>
 
